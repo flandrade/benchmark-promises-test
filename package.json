@@ -1,0 +1,26 @@
+{
+  "name": "benchmark-promises-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint --project '.'",
+    "prestart": "npm run lint && npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/bluebird": "^3.5.19",
+    "bluebird": "^3.5.1",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^2.2.45",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^4.0.1",
+    "tslint": "^5.8.0"
+  }
+}
