@@ -1,14 +1,16 @@
 {
   "name": "benchmark-promises-test",
   "version": "0.0.1",
-  "description": "",
+  "description": "Testing promises",
   "main": "index.js",
   "scripts": {
     "compile": "tsc",
     "lint": "tslint --project '.'",
     "prestart": "npm run lint && npm run compile",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm run compile",
+    "test": "mocha 'test/mocha/**.js'"
   },
+  "license": "MIT",
   "dependencies": {
     "@types/bluebird": "^3.5.19",
     "bluebird": "^3.5.1",

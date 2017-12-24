@@ -23,3 +23,7 @@ logs
 # Dependencies
 node_modules
 npm-debug.log
+
+# TypeScript files
+.tscache
+**/*.js

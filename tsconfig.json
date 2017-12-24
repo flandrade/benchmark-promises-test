@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "alwaysStrict": true,
-    "module": "system",
+    "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
@@ -9,9 +9,6 @@
     "target": "es6",
     "noUnusedParameters": true
   },
-  "include": [
-      "src/**/*"
-  ],
   "exclude": [
     "node_modules"
   ]
