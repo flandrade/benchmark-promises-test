@@ -6,11 +6,20 @@ import scenario from "../../src/scenario-01";
 import { expect } from "./init";
 
 describe("Scenario", function() {
-  context("when all promises are resolved", function() {
-    it("returns the values", function() {
-      return expect(
-        scenario()
-      ).to.not.be.rejected;
+  return runScenario(200);
+});
+
+function runScenario(times: number): void {
+  const values = [...Array(times).keys()];
+  values.map(value => {
+    describe(`test #${value}`, function() {
+      context("when all promises are resolved", function() {
+        it("returns the values", function() {
+          return expect(
+            scenario()
+          ).to.not.be.rejected;
+        });
+      });
     });
   });
-});
+}
