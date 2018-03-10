@@ -1,5 +1,3 @@
-"use strict";
-
 import * as Promise from "bluebird";
 import * as chai from "chai";
 import * as chaiAsPromised from "chai-as-promised";

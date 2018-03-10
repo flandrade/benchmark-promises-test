@@ -8,7 +8,7 @@
     "lint": "tslint --project '.'",
     "prestart": "npm run lint && npm run compile",
     "pretest": "npm run compile",
-    "test": "mocha 'test/mocha/**.js' && jest 'test/jest/**.js'"
+    "test": "mocha 'test/mocha/' && jest 'test/jest/'"
   },
   "license": "MIT",
   "dependencies": {
@@ -26,5 +26,8 @@
     "jest": "^22.0.4",
     "mocha": "^4.0.1",
     "tslint": "^5.8.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/config/init-jest.js"
   }
 }

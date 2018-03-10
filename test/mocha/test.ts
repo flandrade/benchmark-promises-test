@@ -1,12 +1,11 @@
-"use strict";
-
 import * as Promise from "bluebird";
+import "mocha";
 
+import { expect } from "../../config/init-mocha";
 import scenario from "../../src/scenario-01";
-import { expect } from "./init";
 
 describe("Scenario", function() {
-  return runScenario(200);
+  return runScenario(500);
 });
 
 function runScenario(times: number): void {
@@ -16,7 +15,7 @@ function runScenario(times: number): void {
       context("when all promises are resolved", function() {
         it("returns the values", function() {
           return expect(
-            scenario()
+            scenario(500)
           ).to.not.be.rejected;
         });
       });
