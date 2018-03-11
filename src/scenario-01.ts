@@ -2,7 +2,7 @@ import * as Promise from "bluebird";
 
 export default function(value: number): Promise<number[]> {
   const numPromises: number[] = Array(value).fill(1);
-  const promises: Array<Promise<number>> = numPromises.map(num => generate(num));
+  const promises: Array<Promise<number>> = numPromises.map(generate);
   return Promise.all(promises);
 }
 

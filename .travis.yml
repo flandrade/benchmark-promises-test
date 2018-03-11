@@ -5,6 +5,7 @@ node_js:
 before_script:
   - npm run setup
   - npm run compile
+  - npm run lint
 
 script:
   - npm test
