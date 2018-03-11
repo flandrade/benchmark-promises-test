@@ -1,3 +1,7 @@
+/** Script from:
+ * http://www.andrewsouthpaw.com/2017/05/12/jest-chai-and-expect-assertions/
+ */
+
 import * as chai from "chai";
 
 declare var global: any;

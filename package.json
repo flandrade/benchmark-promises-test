@@ -8,7 +8,8 @@
     "lint": "tslint --project '.'",
     "prestart": "npm run lint && npm run compile",
     "pretest": "npm run compile",
-    "test": "mocha 'test/mocha/' && jest 'test/jest/'"
+    "test": "mocha 'test/mocha/' && jest 'test/jest/'",
+    "setup": "npm install"
   },
   "license": "MIT",
   "dependencies": {
